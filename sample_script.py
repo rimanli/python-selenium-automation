@@ -3,11 +3,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 # init driver
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(executable_path='/Users/royalimanli/Project_S360/python-selenium-automation/chromedriver')
 driver.maximize_window()
 
 # open the url
-driver.get('https://www.google.com/')
+driver.get('https://www.google.com')
 
 search = driver.find_element(By.NAME, 'q')
 search.clear()
